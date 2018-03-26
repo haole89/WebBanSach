@@ -7,7 +7,7 @@ using WebBanSach.XuLy;
 using WebBanSach.Models;
 namespace WebBanSach.Areas.QuanTri.Controllers
 {
-    public class MenuController : Controller
+    public class MenuController : BaseController
     {
         // GET: QuanTri/Menu
         public ActionResult Index()

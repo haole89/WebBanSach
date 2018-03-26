@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace WebBanSach.Areas.QuanTri.Controllers
 {
-    public class DefaultController : Controller
+    public class DefaultController : BaseController
     {
         // GET: QuanTri/Default
         public ActionResult Index()

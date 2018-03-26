@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\QuanTri\Controllers\BaseController.cs" />
     <Compile Include="Areas\QuanTri\Controllers\DefaultController.cs" />
     <Compile Include="Areas\QuanTri\Controllers\LoginController.cs" />
     <Compile Include="Areas\QuanTri\Controllers\MenuController.cs" />
@@ -140,6 +141,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\QuanTri\Models\" />
+    <Folder Include="Areas\QuanTri\Views\Base\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
