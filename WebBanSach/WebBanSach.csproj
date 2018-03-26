@@ -100,6 +100,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\QuanTri\Controllers\DefaultController.cs" />
     <Compile Include="Areas\QuanTri\Controllers\LoginController.cs" />
+    <Compile Include="Areas\QuanTri\Controllers\MenuController.cs" />
     <Compile Include="Areas\QuanTri\QuanTriAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -125,6 +126,10 @@
     <Content Include="Areas\QuanTri\Views\Login\DangNhap.cshtml" />
     <Content Include="Areas\QuanTri\Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Areas\QuanTri\Views\Default\Index.cshtml" />
+    <Content Include="Areas\QuanTri\Views\Menu\Index.cshtml" />
+    <Content Include="Areas\QuanTri\Views\Menu\Create.cshtml" />
+    <Content Include="Areas\QuanTri\Views\Menu\Edit.cshtml" />
+    <Content Include="Areas\QuanTri\Views\Menu\Delete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

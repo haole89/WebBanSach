@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebBanSach.Models.Menu>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/QuanTri/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h4>Danh sách menu hiện có</h4>
+
+<p>
+    @Html.ActionLink("Thêm menu", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Tên menu
+        </th>
+        <th>
+            Link
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenMenu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Link)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Edit", new { id=item.MaMenu }) |          
+            @Html.ActionLink("Xóa", "Delete", new { id=item.MaMenu })
+        </td>
+    </tr>
+}
+
+</table>
