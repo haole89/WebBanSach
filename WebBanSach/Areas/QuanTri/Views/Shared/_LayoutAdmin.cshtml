@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <style>
+        #wrapper{
+            margin:auto;
+            width:960px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+        #banner{
+            width:960px;
+            height:90px;
+            background-image:url('/Anh/banner.JPG');
+        }
+        #menu{
+            width:200px;
+            float:left;
+            background-color:aqua;
+        }
+        #menu ul{           
+            list-style:none;
+        }
+        #menu ul li{
+            height:30px;
+            background-color:aqua;
+        }
+        #menu ul li a{         
+            margin-bottom:1px;
+            text-decoration:none;
+        }
+        #menu ul li a:hover{         
+           background-color:aquamarine;
+        }
+        #noidung{
+            width:760px;
+            float:left;
+        }
+        #footer{
+            clear:both;
+            width:960px;
+            height:50px;
+            text-align:center;
+            color:white;
+            background-color:#00ff90;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <i>Xin chào, @Session["USER_NAME"].ToString()</i>        
+        <div id="banner">
+        </div>
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="Default">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Quản lý menu</a>
+                </li>
+                <li>
+                    <a href="#">Quản lý thể loại sách</a>
+                </li>
+                <li>
+                    <a href="#">Quản lý bài viết</a>
+                </li>
+            </ul>
+        </div>
+        <div id="noidung">
+            @RenderBody()
+        </div>
+        <div id="footer">
+            <br />
+            Bản quyền &copy; trang web được xây dựng bởi ĐH CNTT K18
+        </div>
+    </div>
+</body>
+</html>

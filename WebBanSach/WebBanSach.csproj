@@ -123,6 +123,8 @@
     <Content Include="Views\Home\TrangChu.cshtml" />
     <Content Include="Areas\QuanTri\Views\web.config" />
     <Content Include="Areas\QuanTri\Views\Login\DangNhap.cshtml" />
+    <Content Include="Areas\QuanTri\Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Areas\QuanTri\Views\Default\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -133,8 +135,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\QuanTri\Models\" />
-    <Folder Include="Areas\QuanTri\Views\Default\" />
-    <Folder Include="Areas\QuanTri\Views\Shared\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
