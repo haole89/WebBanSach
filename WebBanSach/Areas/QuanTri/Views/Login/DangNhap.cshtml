@@ -1,0 +1,64 @@
+﻿@model WebBanSach.Models.NguoiDung
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng nhập hệ thống</title>
+    <style>
+        #login {
+            margin: auto;
+            text-align: center;
+            margin-top: 250px;
+            border: 1px solid blue;
+            width: 300px;
+        }
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        @using (Html.BeginForm("DangNhap", "Login", FormMethod.Post))
+        {
+           
+            <table width="300">
+                <tr>
+                    <td colspan="2">
+                        <h3>
+                            Đăng nhập hệ thống
+                        </h3>
+                        <hr />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tài khoản:</td>
+                    <td>
+                        
+                        @Html.TextBoxFor(model => model.TaiKhoan, new { @autofocus = "autofocus" })
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu</td>
+                    <td>
+                        @Html.PasswordFor(model => model.MatKhau)
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Đăng nhập" />
+                        <input type="button" value="Hủy" />
+                    </td>
+                </tr>
+            </table>
+            @Html.ValidationSummary(false, "", new { @class = "error" });
+        }
+
+    </div>
+</body>
+</html>

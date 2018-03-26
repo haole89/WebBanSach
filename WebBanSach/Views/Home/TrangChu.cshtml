@@ -1,0 +1,39 @@
+﻿@model List<WebBanSach.Models.Menu>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TrangChu</title>
+    <link href="~/css/bansach.css" rel="stylesheet" />
+    
+</head>
+<body>
+   <div id="wrapper">
+       <div id="login">
+           <a href="/QuanTri/Login/DangNhap">Đăng nhập</a>
+       </div>
+       <div id="banner"></div>
+       <div id="menu">
+           <ul>
+               @foreach(var item in Model)
+               {
+                <li>
+                    <a href="@item.Link">
+                        @item.TenMenu
+                    </a>
+                </li>
+               }           
+              
+           </ul>
+
+       </div>
+       <div id="noidung"></div>
+       <div id="footer"></div>
+   </div>
+</body>
+</html>

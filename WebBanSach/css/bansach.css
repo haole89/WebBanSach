@@ -1,0 +1,45 @@
+﻿
+#wrapper {
+    width: 960px;
+    margin: auto;
+}
+#login{
+    text-align:right;
+}
+#banner {
+    width: 960px;
+    height: 90px;
+    background-image: url('/Anh/banner.jpg');
+}
+
+#menu {
+    width: 960px;
+    height: 40px;
+    background-color: #808080;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+    li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+        li a:hover {
+            color: #1dcff7;
+        }
+
+#noidung {
+}
+
+#footer {
+}
